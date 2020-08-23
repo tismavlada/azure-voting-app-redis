@@ -9,7 +9,7 @@ pipeline {
       }
       stage('Docker Build') {
          steps {
-            sh(script: 'docker images -a')
+            //sh(script: 'docker images -a')
             sh(script: """
                cd /home/vlada
                docker images -a
